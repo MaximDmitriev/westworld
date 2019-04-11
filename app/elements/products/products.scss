@@ -24,6 +24,22 @@
     max-width: 542px;
     height: 305px;
     margin-bottom: 14px;
+    overflow: hidden;
+    &:hover {
+      .products__item-title {
+        top: 47px;
+      }
+      .products__item-text {
+        top: 109px;
+        transition: 0.7s;
+        transition-delay: 0.3s;
+      }
+      .products__item-btn-group {
+        top: 215px;
+        transition: 0.6s;
+        transition-delay: 0.6s;
+      }
+    }
   }
   &__item-overlay {
     position: absolute;
@@ -36,7 +52,7 @@
   }
   &__item-title {
     position: absolute;
-    top: 47px;
+    top: 226px;
     left: 48px;
     max-width: 440px;
     color: #ffffff;
@@ -45,19 +61,25 @@
     font-weight: 500;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+    transition: 1s;
   }
   &__item-text {
     position: absolute;
-    top: 109px;
+    top: 320px;
     left: 48px;
     color: #ffffff;
     font-weight: 400;
     line-height: 24px;
+
+    transition-delay: 0s;
+    transition: 0s;
   }
   &__item-btn-group {
     position: absolute;
-    top: 215px;
+    top: 320px;
     left: 48px;
+    transition-delay: 0s;
+    transition: 0s;
   }
   &__item-btn {
     width: 144px;
