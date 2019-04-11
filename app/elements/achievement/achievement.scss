@@ -1,0 +1,42 @@
+.achievement {
+  margin-top: 64px;
+  &__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__item-img {
+    position: relative;
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    margin-right: 32px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    // object-fit: contain;
+    // object-position: center;
+  }
+  &__item-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &_big {
+      width: 65px;
+      height: 66px;
+    }
+  }
+  &__item-text {
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    color: $txt-color;
+  }
+  &__item-attantion {
+    font-weight: 500;
+    color: $btn-color;
+  }
+}

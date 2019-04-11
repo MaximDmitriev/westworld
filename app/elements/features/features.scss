@@ -1,0 +1,27 @@
+.features {
+  &__wrap {
+    flex-direction: row;
+    margin-top: 48px;
+  }
+  &__item {
+    display: flex;
+    flex-basis: 33.33%;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    &:not(:first-child) {
+      border-left: 2px solid #d3d3d3;
+      padding-left: 44px;
+    }
+  }
+  &__item-text {
+    margin-left: 40px;
+    font-family: "DINPro";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $btn-color;
+  }
+}
