@@ -9,6 +9,13 @@
     position: relative;
     flex-direction: column;
   }
+  &__overlay {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(145, 145, 145, 0.6) 100%);
+  }
   &__title {
     max-width: 630px;
     margin-top: 152px;
@@ -19,6 +26,7 @@
     line-height: 1.4;
   }
   &__btn-group {
+    opacity: 1;
     display: flex;
     margin-top: 50px;
     margin-bottom: 195px;
@@ -40,17 +48,7 @@
     color: $secondaryText-color;
     margin-top: 10px;
   }
-  &__overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    // width: 100%;
-    // height: 100%;
-    background-image: linear-gradient(180deg, #000000 0%, #919191 100%);
-    opacity: 0.6;
-  }
+
   &__boss {
     position: absolute;
     bottom: 0;
