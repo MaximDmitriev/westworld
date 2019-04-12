@@ -1,0 +1,21 @@
+.mainscreen {
+  background-image: url('./img/teams.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__overlay {
+    display: flex;
+    justify-content: center;
+    padding: 137px 0;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(145, 145, 145, 0.6) 100%);
+  }
+  &__title {
+    color: #ffffff;
+    font-family: "DINPro";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}

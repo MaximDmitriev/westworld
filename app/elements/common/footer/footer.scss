@@ -53,4 +53,11 @@
     }
 
   }
+  &__contacts-title {
+    display: none;
+    text-transform: uppercase;
+    font-family: "DINPro";
+    font-weight: 700;
+    letter-spacing: 0.8px;
+  }
 }
