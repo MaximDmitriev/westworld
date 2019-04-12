@@ -1,0 +1,85 @@
+.cadaster {
+  // margin-top: 94px;
+  padding-top: 48px;
+  padding-bottom: 96px;
+  &__wrap {
+    // justify-content: center;
+    align-items: center;
+    width: 1156px;
+    padding: 0;
+  }
+  &__title {
+    margin-bottom: 47px;
+    font-family: "DINPro";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $txt-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 374px;
+    border: 1px solid #d3d3d3;
+  }
+  &__card-view {
+    width: 372px;
+    height: 220px;
+    margin-bottom: 27px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    &_plan {
+      background-image: url('img/plan.png');
+    }
+    &_tech {
+      background-image: url('img/techplan.png');
+    }
+    &_rights {
+      background-image: url('img/rights.png');
+    }
+  }
+  &__card-overlay {
+    width: 372px;
+    height: 220px;
+    padding-top: 176px;
+    padding-left: 54px;
+    background-image: linear-gradient(180deg, rgba(145, 145, 145, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+  }
+  &__card-title {
+    color: #ffffff;
+    font-family: "DINPro";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  &__list {
+    // margin-left: 30px;
+    // margin-top: 27px;
+    padding: 0 30px;
+  }
+  &__list-item {
+    display: flex;
+    margin-bottom: 22px;
+    align-items: flex-start;
+  }
+  &__list-item-txt {
+    font-family: "Helvetica";
+// font-size: 16px;
+    font-weight: 300;
+    color: $secondaryText-color;
+    padding-left: 16px;
+  }
+  &__list-item-icon {
+    fill: $btn-color;
+    flex-shrink: 0;
+  }
+}

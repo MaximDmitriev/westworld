@@ -49,10 +49,12 @@ let path = {
         svg_icons: 'app/elements/**/svg-icons/*.svg',
         fonts: 'app/fonts/**/*.*',
         vendor_js: [
-            'bower_components/jquery/dist/jquery.min.js'
+            'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/swiper/dist/js/swiper.min.js'
         ],
         vendor_css: [
-            'bower_components/normalize-css/normalize.css'
+            'bower_components/normalize-css/normalize.css',
+            'bower_components/swiper/dist/css/swiper.min.css'
         ]
     },
     watch: {

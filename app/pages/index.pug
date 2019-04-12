@@ -1,22 +1,24 @@
 doctype html
 html
-    include ../elements/head/head
+    include ../elements/common/head/head
     +head('West World', 'Page description', 'Page keywords')
     body
 
-    include ../elements/header/header
-    include ../elements/nav/nav
-    include ../elements/main/main
-    include ../elements/features/features
-    include ../elements/cooperation/cooperation
-    include ../elements/achievement/achievement
-    include ../elements/products/products
-    include ../elements/cadaster/cadaster
-    include ../elements/guarantee/guarantee
-    include ../elements/offers/offers
-    include ../elements/feedback/feedback
-    include ../elements/form/form
-    include ../elements/footer/footer
+        include ../elements/common/header/header
+        include ../elements/common/nav/nav
+        include ../elements/index-page/main/main
+        include ../elements/index-page/features/features
+        include ../elements/index-page/cooperation/cooperation
+        include ../elements/index-page/achievement/achievement
+        include ../elements/index-page/products/products
+        include ../elements/index-page/cadaster/cadaster
+        include ../elements/index-page/guarantee/guarantee
+        include ../elements/index-page/offers/offers
+        include ../elements/index-page/slider/slider
+        include ../elements/index-page/feedback/feedback
+        include ../elements/index-page/form/form
+        include ../elements/common/footer/footer
+
 
         script(src="js/libs.min.js")
         script(src="js/custom.js")

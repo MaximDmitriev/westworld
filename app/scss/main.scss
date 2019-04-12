@@ -20,6 +20,10 @@ img {
 
 a {
   text-decoration: none;
+  color: unset;
+  &:visited {
+    color: unset;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -50,16 +54,18 @@ button {
 
 @import "icons";
 
-@import "../elements/header/header";
-@import "../elements/nav/nav";
-@import "../elements/main/mainscreen";
-@import "../elements/features/features";
-@import "../elements/cooperation/cooperation";
-@import "../elements/achievement/achievement";
-@import "../elements/products/products";
-@import "../elements/cadaster/cadaster";
-@import "../elements/offers/offers";
-@import "../elements/guarantee/guarantee";
-@import "../elements/feedback/feedback";
-@import "../elements/form/form";
-@import "../elements/footer/footer";
+@import "../elements/common/header/header";
+@import "../elements/common/nav/nav";
+@import "../elements/common/footer/footer";
+
+@import "../elements/index-page/main/mainscreen";
+@import "../elements/index-page/features/features";
+@import "../elements/index-page/cooperation/cooperation";
+@import "../elements/index-page/achievement/achievement";
+@import "../elements/index-page/products/products";
+@import "../elements/index-page/cadaster/cadaster";
+@import "../elements/index-page/offers/offers";
+@import "../elements/index-page/guarantee/guarantee";
+@import "../elements/index-page/feedback/feedback";
+@import "../elements/index-page/form/form";
+@import "../elements/index-page/slider/slider";

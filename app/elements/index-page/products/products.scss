@@ -1,0 +1,110 @@
+.products {
+  // margin-top: 95px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  &__wrap {
+    align-items: center;
+    padding: 0;
+  }
+  &__title {
+    margin-bottom: 63px;
+    font-family: "DINPro";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: $txt-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    max-width: 542px;
+    height: 305px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    &:hover {
+      .products__item-title {
+        top: 47px;
+      }
+      .products__item-text {
+        top: 109px;
+        transition: 0.7s;
+        transition-delay: 0.3s;
+        padding-right: 60px;
+      }
+      .products__item-btn-group {
+        top: 215px;
+        transition: 0.6s;
+        transition-delay: 0.6s;
+      }
+      .products__item-overlay {
+        opacity: 0.8;
+        transition: 0.8s;
+      }
+    }
+  }
+  &__item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #919191 0%, #000000 100%);
+    opacity: 0.5;
+    transition: 0.8s;
+  }
+  &__item-title {
+    position: absolute;
+    top: 226px;
+    left: 48px;
+    max-width: 440px;
+    color: #ffffff;
+    font-family: "DINPro";
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    transition: 1s;
+  }
+  &__item-text {
+    position: absolute;
+    top: 320px;
+    left: 48px;
+    padding-right: 60px;
+    max-width: 450px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 24px;
+    transition-delay: 0s;
+    transition: 1s;
+  }
+  &__item-btn-group {
+    position: absolute;
+    top: 320px;
+    left: 48px;
+    transition-delay: 0s;
+    transition: 0.3s;
+  }
+  &__item-btn {
+    width: 144px;
+    height: 45px;
+    margin-right: 16px;
+    border-radius: 25px;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    color: $btn-color;
+    transition: 0.3s;
+    &:hover {
+      background-color: $btn-color;
+      color: #ffffff;
+      border-color: $btn-color;
+    }
+  }
+}
