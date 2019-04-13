@@ -1,0 +1,70 @@
+.form-object {
+  margin-top: 96px;
+  margin-bottom: 48px;
+  background-image: url('img/object_form.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__overlay {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 229, 141, 0.6) 100%);
+  }
+  &__wrap {
+    position: relative;
+    padding: 90px 0;
+  }
+  &__title {
+    // margin-bottom: 15px;
+    color: #ffffff;
+    font-family: "DINPro";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    max-width: 555px;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+  }
+  &__btn {
+    height: 45px;
+    width: 288px;
+    border-radius: 25px;
+    background-color: $btn-color;
+    color: #ffffff;
+
+  }
+  &__specialist {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+    right: 50px;
+  }
+  &__specialist-img {
+    margin-left: -135px;
+  }
+  &__specialist-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__specialist-name {
+    padding-bottom: 15px;
+    font-family: "DINPro";
+    font-weight: 500;
+    letter-spacing: 1.6px;
+  }
+  &__specialist-position {
+    letter-spacing: 0.8px;
+    padding-bottom: 30px;
+  }
+}

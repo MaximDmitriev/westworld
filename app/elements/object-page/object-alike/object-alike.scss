@@ -1,0 +1,100 @@
+.alike {
+  padding-top: 48px;
+  padding-bottom: 96px;
+  &__wrap {
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 40px;
+    font-family: "DINPro";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 50px;
+    color: $txt-color;
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__item {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    padding-right: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d3d3d3;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__item-slide {
+    flex-shrink: 0;
+    // max-width: 245px;
+    max-height: 163px;
+  }
+  &__item-content {
+    height: 100%;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item-header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 7px;
+  }
+  &__item-name {
+    text-transform: uppercase;
+    font-family: "DINPro";
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: $btn-color;
+  }
+  &__item-like {
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    color: $txt-color;
+    padding-right: 6px;
+    margin-left: auto;
+  }
+  &__item-address {
+    font-weight: 300;
+    color: $secondaryText-color;
+  }
+  &__item-txt {
+    font-weight: 300;
+    color: $secondaryText-color;
+    padding-top: 15px;
+  }
+  &__item-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  &__item-params {
+    display: flex;
+  }
+  &__item-params-item {
+    display: flex;
+    margin-right: 32px;
+  }
+  &__item-params-key {
+    padding-right: 8px;
+    color: $txt-color;
+  }
+  &__item-params-value {
+    font-weight: 300;
+    color: $secondaryText-color;
+  }
+  &__item-price {
+    font-family: "DINPro";
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: $txt-color;
+  }
+}

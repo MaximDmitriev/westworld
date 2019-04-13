@@ -1,0 +1,55 @@
+.infoblock {
+  padding-top: 96px;
+  padding-bottom: 48px;
+  &__wrap {
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 96px;
+    color: $txt-color;
+    font-family: "DINPro";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &__card {
+    display: flex;
+  }
+  &__card-img {
+    max-height: 368px;
+  }
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__card-content-txt {
+    padding-right: 20px;
+    color: $secondaryText-color;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  &__card-desc-wrapper {
+    display: flex;
+    padding-top: 40px;
+  }
+  &__card-desc-list {
+    flex-basis: 50%;
+    padding-right: 40px;
+  }
+  &__card-desc-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  &__card-desc-key {
+    font-family: "DINPro";
+    color: $txt-color;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+  }
+  &__card-desc-value {
+    font-weight: 300;
+    color: $secondaryText-color;
+  }
+}

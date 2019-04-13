@@ -57,6 +57,7 @@ button {
 @import "../elements/common/header/header";
 @import "../elements/common/nav/nav";
 @import "../elements/common/footer/footer";
+@import "../elements/common/slider/slider";
 
 @import "../elements/index-page/main/mainscreen";
 @import "../elements/index-page/features/features";
@@ -68,10 +69,16 @@ button {
 @import "../elements/index-page/guarantee/guarantee";
 @import "../elements/index-page/feedback/feedback";
 @import "../elements/index-page/form/form";
-@import "../elements/index-page/slider/slider";
 
-@import "../elements/team-page/mainscreen/mainscreen";
+@import "../elements/team-page/mainscreen/team-mainscreen";
 @import "../elements/team-page/employees/employees";
 
-@import "../elements/contact-page/mainscreen/mainscreen";
+@import "../elements/contact-page/contacts-mainscreen/contacts-mainscreen";
 @import "../elements/contact-page/contacts/contacts";
+
+@import "../elements/object-page/object-mainscreen/object-mainscreen";
+@import "../elements/object-page/infoblock/infoblock";
+@import "../elements/object-page/numbers/numbers";
+@import "../elements/object-page/object-form/object-form";
+@import "../elements/object-page/object-location/object-location";
+@import "../elements/object-page/object-alike/object-alike";
