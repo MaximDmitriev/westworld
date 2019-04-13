@@ -1,0 +1,71 @@
+.contacts {
+  &__wrap {
+    width: 100%;
+    padding: 0;
+    padding-left: calc((100vw - 1100px) / 2);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__content {
+    // display: flex;
+    // flex-direction: column;
+    padding-top: 96px;
+    padding-left: 40px;
+  }
+  &__content-title {
+    font-family: "DINPro";
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+    color: $txt-color;
+    text-transform: uppercase;
+  }
+  &__content-address {
+    font-weight: 300;
+    line-height: 24px;
+    padding: 17px 0;
+    color: $secondaryText-color;
+  }
+  &__content-subtitle {
+    font-family: "DINPro";
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 24px;
+    color: $txt-color;
+    text-transform: uppercase;
+  }
+  &__content-schedule {
+    font-weight: 300;
+    line-height: 24px;
+    color: $secondaryText-color;
+    padding: 17px 0;
+  }
+  &__content-phone {
+    display: block;
+    font-weight: 300;
+    line-height: 24px;
+    color: $secondaryText-color;
+  }
+  &__content-email {
+    display: block;
+    font-weight: 300;
+    line-height: 24px;
+    color: $secondaryText-color;
+    padding-bottom: 17px;
+  }
+  &__content-social-block {
+    padding-top: 12px;
+  }
+
+}
+.big-red {
+  width: 28px;
+  height: 28px;
+  fill: $btn-color;
+  margin-right: 21px;
+  &_vk {
+    width: 33px;
+    height: 20px;
+  }
+}
