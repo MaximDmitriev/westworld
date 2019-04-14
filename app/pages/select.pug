@@ -1,0 +1,15 @@
+doctype html
+html
+    include ../elements/common/head/head
+    +head('West World', 'Page description', 'Page keywords')
+    body
+
+        include ../elements/common/header/header
+        include ../elements/common/nav/nav
+        include ../elements/select-page/select-mainscreen/select-mainscreen
+        include ../elements/select-page/filter/filter
+        include ../elements/common/footer/footer
+
+
+        script(src="js/libs.min.js")
+        script(src="js/custom.js")

@@ -1,0 +1,72 @@
+.filter {
+  // padding-top: 48px;
+  // padding-bottom: 48px;
+  padding: 48px 0;
+  &__wrap {
+    // flex-direction: row;
+  }
+  &__primary {
+    width: 100%;
+    padding-top: 48px;
+  }
+  &__primary-header {
+    padding-bottom: 15px;
+    font-family: "DINPro";
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    color: $txt-color;
+    text-transform: uppercase;
+  }
+  &__primary-input-group {
+    display: flex;
+    width: 100%;
+    font-family: "Helvetica";
+    font-weight: 300;
+  }
+  &__primary-btn {
+    // width: 161px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-right: 16px;
+    padding: 0 45px;
+    border-radius: 25px;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    color: $txt-color;
+    &_disabled {
+      color: #585858;
+    }
+  }
+  &__primary-input-item {
+    // display: block;
+    width: inherit;
+    padding: 0 24px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+  }
+  &__secondary {
+    padding-top: 24px;
+    width: 100%;
+  }
+  &__secondary-header {
+    padding-bottom: 15px;
+    font-family: "DINPro";
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    color: $txt-color;
+    text-transform: uppercase;
+  }
+  &__secondary-input-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__secondary-rooms-group, &__secondary-price-group, &__secondary-area-group {
+    display: flex;
+  }
+}

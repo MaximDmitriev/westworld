@@ -1,0 +1,31 @@
+.filter.section
+  ._wrar.wrap
+    ._primary
+      ._primary-header Основные вопросы
+      ._primary-input-group
+        ._primary-btn Москва 
+          +svg('arrow_down')
+        ._primary-btn.-disabled Тип недвижимости
+          +svg('arrow_down')
+        input(type="text" placeholder="Введите название ЖК, района, метро, шоссе")._primary-input-item
+    ._secondary
+      ._secondary-header Дополнительные вопросы
+        +svg('arrow_down')
+      ._secondary-input-group
+        ._secondary-rooms-group
+          ._secondary-rooms-item Кол-во комнат
+          ._secondary-rooms-item 1
+          ._secondary-rooms-item 2
+          ._secondary-rooms-item 3
+          ._secondary-rooms-item 4+
+        ._secondary-price-group
+          input(type="text" placeholder="Цена от")._secondary-price-item 
+          input(type="text" placeholder="Цена до")._secondary-price-item 
+        ._secondary-area-group
+          input(type="text" placeholder="Площадь от (м²)")._secondary-area-item 
+          input(type="text" placeholder="до (м²)")._secondary-area-item
+    ._btn-group
+      button._btn-submit Подобрать
+      button._btn-list Посмотреть списком
+        +svg('hamburger')
+
