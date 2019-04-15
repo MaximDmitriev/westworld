@@ -40,6 +40,10 @@
     border-radius: 25px;
     background-color: $btn-color;
     color: #ffffff;
+    transition: 0.4s;
+    &:hover {
+      background: darken($btn-color, 5%);
+    }
 
   }
   &__specialist {
@@ -56,6 +60,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    color: #fff;
+    text-shadow: 0 5px 10px #000;
   }
   &__specialist-name {
     padding-bottom: 15px;

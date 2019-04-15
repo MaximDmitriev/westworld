@@ -1,6 +1,9 @@
 .alike {
   padding-top: 48px;
   padding-bottom: 96px;
+  &_select {
+    padding-bottom: 48px;
+  }
   &__wrap {
     align-items: center;
   }
@@ -26,8 +29,12 @@
     padding-right: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid #d3d3d3;
+    transition: 0.4s;
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     }
   }
   &__item-slide {

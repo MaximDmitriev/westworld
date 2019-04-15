@@ -12,20 +12,31 @@
     padding-top: 96px;
     padding-left: 40px;
   }
-  &__content-title {
-    font-family: "DINPro";
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 1.2px;
-    line-height: 24px;
-    color: $txt-color;
-    text-transform: uppercase;
-  }
-  &__content-address {
+  // &__content-title {
+  //   font-family: "DINPro";
+  //   font-size: 24px;
+  //   font-weight: 500;
+  //   letter-spacing: 1.2px;
+  //   line-height: 24px;
+  //   color: $txt-color;
+  //   text-transform: uppercase;
+  // }
+  // &__content-address {
+  //   font-weight: 300;
+  //   line-height: 24px;
+  //   padding: 17px 0;
+  //   color: $secondaryText-color;
+  // }
+  &__content-string {
+    // display: block;
     font-weight: 300;
     line-height: 24px;
-    padding: 17px 0;
+    padding: 10px 0;
+    padding-bottom: 17px;
     color: $secondaryText-color;
+  }
+  &__content-link {
+    display: block;
   }
   &__content-subtitle {
     font-family: "DINPro";
@@ -35,37 +46,45 @@
     color: $txt-color;
     text-transform: uppercase;
   }
-  &__content-schedule {
-    font-weight: 300;
-    line-height: 24px;
-    color: $secondaryText-color;
-    padding: 17px 0;
-  }
-  &__content-phone {
-    display: block;
-    font-weight: 300;
-    line-height: 24px;
-    color: $secondaryText-color;
-  }
-  &__content-email {
-    display: block;
-    font-weight: 300;
-    line-height: 24px;
-    color: $secondaryText-color;
-    padding-bottom: 17px;
-  }
+  // &__content-schedule {
+  //   font-weight: 300;
+  //   line-height: 24px;
+  //   color: $secondaryText-color;
+  //   padding: 17px 0;
+  // }
+  // &__content-phone {
+  //   display: block;
+  //   font-weight: 300;
+  //   line-height: 24px;
+  //   color: $secondaryText-color;
+  // }
+  // &__content-email {
+  //   display: block;
+  //   font-weight: 300;
+  //   line-height: 24px;
+  //   color: $secondaryText-color;
+  //   padding-bottom: 17px;
+  // }
   &__content-social-block {
-    padding-top: 12px;
+    display: flex;
+    padding-top: 17px;
+    align-items: center;
   }
 
 }
-.big-red {
+.big {
   width: 28px;
   height: 28px;
-  fill: $btn-color;
   margin-right: 21px;
+  &_ig {
+    fill: #d6249f;
+  }
+  &_fb {
+    fill: $fb-color;
+  }
   &_vk {
     width: 33px;
     height: 20px;
+    fill: $vk-color;
   }
 }

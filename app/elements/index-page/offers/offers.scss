@@ -66,6 +66,10 @@
     background-color: $btn-color;
     color: #ffffff;
     letter-spacing: 0.8px;
+    transition: 0.2s;
+    &:hover {
+      background: darken($btn-color, 5%);
+    }
   }
   &__card-view {
     width: 296px;

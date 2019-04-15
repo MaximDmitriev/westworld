@@ -7,8 +7,12 @@
     display: flex;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 0.4s;
     &:not(:last-child) {
       margin-bottom: 32px;
+    }
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     }
   }
   &__card-img {
@@ -49,6 +53,10 @@
     border-radius: 25px;
     background-color: $btn-color;
     color: #ffffff;
+    transition: 0.4s;
+    &:hover {
+      background: darken($btn-color, 5%);
+    }
   }
   &__card-btn-feedback {
     width: 197px;
@@ -58,5 +66,10 @@
     border: 1px solid #d3d3d3;
     background-color: #ffffff;
     color: $btn-color;
+    transition: 0.4s;
+    &:hover {
+      background-color: $btn-color;
+      color: #ffffff;
+    }
   }
 }

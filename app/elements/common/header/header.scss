@@ -36,5 +36,9 @@
     background-color: $btn-color;
     color: #ffffff;
     border-radius: 50px;
+    transition: 0.4s;
+    &:hover {
+      background: darken($btn-color, 5%);
+    }
   }
 }

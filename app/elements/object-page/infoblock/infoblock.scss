@@ -18,6 +18,7 @@
   }
   &__card-img {
     max-height: 368px;
+    flex-shrink: 0;
   }
   &__card-content {
     display: flex;

@@ -33,8 +33,11 @@ a {
 button {
   font-family: $base-font;
   border: none;
-  &:hover{
+  &:hover {
     cursor: pointer;
+  }
+  &:active, &:focus {
+    outline: none;
   }
 }
 
@@ -50,6 +53,10 @@ button {
   flex-direction: column;
   width: 1100px;
   padding: 0 15px;
+}
+
+.hide {
+  display: none;
 }
 
 @import "icons";
@@ -85,3 +92,5 @@ button {
 
 @import "../elements/select-page/select-mainscreen/select-mainscreen";
 @import "../elements/select-page/filter/filter";
+@import "../elements/select-page/select-pagination/select-pagination";
+@import "../elements/select-page/select-item/select-item";

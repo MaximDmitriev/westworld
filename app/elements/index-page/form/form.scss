@@ -55,6 +55,10 @@
     border-radius: 25px;
     background-color: $btn-color;
     color: #ffffff;
+    transition: 0.4s;
+    &:hover {
+      background: darken($btn-color, 5%);
+    }
   }
   &__img {
     position: absolute;

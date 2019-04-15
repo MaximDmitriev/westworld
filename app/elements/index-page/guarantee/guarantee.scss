@@ -40,6 +40,9 @@
     font-weight: 400;
     letter-spacing: 0.8px;
     color: #ffffff;
-
+    transition: 0.2s;
+    &:hover {
+      background: darken($btn-color, 5%);
+    }
   }
 }
