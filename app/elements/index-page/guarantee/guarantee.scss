@@ -11,6 +11,9 @@
     align-items: center;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(145, 145, 145, 0.6) 100%);
     padding-top: 133px;
+    @media (max-width: 767px) {
+      padding-top: 78px;
+    }
   }
   &__title {
     margin-bottom: 31px;
@@ -20,6 +23,13 @@
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
+    @media (max-width: 767px) {
+      font-size: 34px;
+    }
+    @media (max-width: 479px) {
+      text-align: center;
+      font-size: 32px;
+    }
   }
   &__content {
     max-width: 460px;
@@ -41,6 +51,10 @@
     letter-spacing: 0.8px;
     color: #ffffff;
     transition: 0.2s;
+    @media (max-width: 767px) {
+      width: 258px;
+      margin-bottom: 78px;
+    }
     &:hover {
       background: darken($btn-color, 5%);
     }

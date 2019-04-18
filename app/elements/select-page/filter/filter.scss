@@ -87,6 +87,8 @@
     letter-spacing: 0.8px;
     color: #d0d0d0;
     cursor: pointer;
+    user-select: none;
+    transition: 0.4s;
     &:not(:first-child) {
       margin-left: 8px;
     }
@@ -100,6 +102,15 @@
       height: 50px;
       border-radius: 5px 25px 25px 5px;
     }
+    &_checked {
+      border-color: $btn-color;
+      background-color: $btn-color;
+      color: #ffffff;
+    }
+    &_active {
+      color: $txt-color;
+    }
+
   }
   &__secondary-price-item {
     width: 132px;
@@ -130,6 +141,7 @@
       margin-right: 8px;
       border-radius: 25px 5px 5px 25px;
     }
+
   }
   &__btn-group {
     display: flex;
@@ -162,6 +174,7 @@
     transition: 0.4s;
     &:hover {
       background-color: $btn-color;
+      border-color: $btn-color;
       color: #ffffff;
       .filter__btn-icon {
         fill: #ffffff;
@@ -178,5 +191,19 @@
   }
   &__btn-text {
     user-select: none;
+  }
+  &__select-icon {
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+  &__secondary-checkbox-input {
+    display: none;
+    &:checked {
+      .filter__secondary-rooms-item {
+        border-color: $btn-color;
+        background-color: $btn-color;
+        color: #ffffff;
+      }
+    }
   }
 }

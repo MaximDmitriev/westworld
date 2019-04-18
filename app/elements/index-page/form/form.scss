@@ -1,13 +1,27 @@
 .form {
-  // margin-top: 160px;
   padding-top: 112px;
   padding-bottom: 96px;
+  @media (max-width: 949px) {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
   &__overlay {
     width: 100%;
     padding-top: 89px;
     padding-left: 64px;
     border-radius: 10px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 229, 141, 0.6) 100%);
+    @media (max-width: 767px) {
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__wrap {
     position: relative;
@@ -26,17 +40,32 @@
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
+    @media (max-width: 767px) {
+      font-size: 34px;
+    }
+    @media (max-width: 479px) {
+      text-align: center;
+      font-size: 32px;
+    }
   }
   &__content {
     margin-bottom: 23px;
     font-weight: 300;
     color: #ffffff;
+    @media (max-width: 479px) {
+      text-align: center;
+    }
   }
   &__body {
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
     margin-bottom: 92px;
+    @media (max-width: 767px) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__body-input {
     width: 240px;
@@ -48,6 +77,9 @@
     border: 1px solid #d3d3d3;
     background-color: #ffffff;
     color: $secondaryText-color;
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
   }
   &__body-btn {
     width: 240px;
@@ -64,5 +96,11 @@
     position: absolute;
     bottom: 0;
     right: 130px;
+    @media (max-width: 1102px) {
+      right: 80px;
+    }
+    @media (max-width: 949px) {
+      display: none;
+    }
   }
 }

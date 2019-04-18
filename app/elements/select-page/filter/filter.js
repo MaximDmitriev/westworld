@@ -2,16 +2,14 @@ const toggleBtn = $('.filter__btn-list'),
       listIcon = $('.icon-hamburger'),
       mapIcon = $('.icon-object_label'),
       btnTxt = $('.filter__btn-text')[0],
-      itemsList = $('.alike'),
+      itemsList = $('#list'),
       pagination = $('.select-pagination'),
-      item = $('.select-item');
-
-      console.log(itemsList);
+      item = $('.select-item'),
+      roomBtns = $('[data-attribute="number"]');
 
 mapIcon.addClass('hide');
 itemsList.addClass('hide');
 pagination.addClass('hide');
-// item.addClass('hide');
 
 toggleBtn.click(function() {
   
@@ -33,4 +31,7 @@ toggleBtn.click(function() {
   }
 });
 
+// roomBtns.click(function() {
+//   $(this).toggleClass('filter__secondary-rooms-item_checked');
+// });
 

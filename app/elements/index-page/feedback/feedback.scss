@@ -4,6 +4,9 @@
   padding-top: 46px;
   padding-bottom: 46px;
   align-items: center;
+  @media (max-width: 767px) {
+    padding-bottom: 32px;
+  }
   &__title {
     margin-bottom: 80px;
     font-family: "DINPro";
@@ -13,6 +16,14 @@
     color: $txt-color;
     text-transform: uppercase;
     text-align: center;
+    @media (max-width: 767px) {
+      font-size: 34px;
+      margin-bottom: 48px;
+    }
+    @media (max-width: 479px) {
+      text-align: center;
+      font-size: 32px;
+    }
   }
   &__item {
     display: flex;
@@ -25,6 +36,10 @@
     border-radius: 10px;
     border: 1px solid #d3d3d3;
     background-color: #ffffff;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__item-view {
     flex-shrink: 0;
@@ -46,6 +61,10 @@
   }
   &__item-content {
     padding-left: 32px;
+    @media (max-width: 767px) {
+      padding: 0;
+      padding-top: 20px;
+    }
   }
   &__item-header {
     display: flex;

@@ -2,66 +2,71 @@
   .cadaster__wrap.wrap
     h2.cadaster__title Кадастровые услуги
     .cadaster__container
-      .cadaster__card
-        .cadaster__card-view.cadaster__card-view_plan
-          .cadaster__card-overlay
-            h3.cadaster__card-title Межевой план
-        .cadaster__list
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Постановка на кадастровый учет
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Уточнение границ
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Объеденение и разделение участков
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Перераспределение/устранение кадастровой ошибки
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Внесение сведений в ЕГРН
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Изменение вида разрешённого использования земли
-      .cadaster__card
-        .cadaster__card-view.cadaster__card-view_tech
-          .cadaster__card-overlay
-            h3.cadaster__card-title Технический план
-        .cadaster__list
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Постановка на кадастровый учет
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Для ввода объекта в эксплуатацию
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Для договора аренды
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt На квартиру ( в т.ч. для перепланировки)
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt На объект незавершенного строительства
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Подготовка акта сноса
-      .cadaster__card
-        .cadaster__card-view.cadaster__card-view_rights
-          .cadaster__card-overlay
-            h3.cadaster__card-title Регистрация прав
-        .cadaster__list
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Регистрация права собственности
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Внесение изменений
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Исправление технической ошибки
-          .cadaster__list-item
-            +svg('checked', 'cadaster__list-item-icon') 
-            p.cadaster__list-item-txt Прекращение права собсвтенности
+      .swiper-container(data-slider="cadastr")
+        .swiper-wrapper
+          .swiper-slide
+            .cadaster__card
+              .cadaster__card-view.cadaster__card-view_plan
+                .cadaster__card-overlay
+                  h3.cadaster__card-title Межевой план
+              .cadaster__list
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Постановка на кадастровый учет
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Уточнение границ
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Объеденение и разделение участков
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Перераспределение/устранение кадастровой ошибки
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Внесение сведений в ЕГРН
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Изменение вида разрешённого использования земли
+          .swiper-slide      
+            .cadaster__card
+              .cadaster__card-view.cadaster__card-view_tech
+                .cadaster__card-overlay
+                  h3.cadaster__card-title Технический план
+              .cadaster__list
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Постановка на кадастровый учет
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Для ввода объекта в эксплуатацию
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Для договора аренды
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt На квартиру ( в т.ч. для перепланировки)
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt На объект незавершенного строительства
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Подготовка акта сноса
+          .swiper-slide                  
+            .cadaster__card
+              .cadaster__card-view.cadaster__card-view_rights
+                .cadaster__card-overlay
+                  h3.cadaster__card-title Регистрация прав
+              .cadaster__list
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Регистрация права собственности
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Внесение изменений
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Исправление технической ошибки
+                .cadaster__list-item
+                  +svg('checked', 'cadaster__list-item-icon') 
+                  p.cadaster__list-item-txt Прекращение права собсвтенности

@@ -9,6 +9,18 @@
     flex-direction: column;
     padding-top: 152px;
     padding-bottom: 195px;
+    @media (max-width: 1102px) {
+      padding-top: 130px;
+      padding-bottom: 165px;
+    }
+    @media (max-width: 949px) {
+      padding-top: 100px;
+      padding-bottom: 135px;
+    }
+    @media (max-width: 479px) {
+      padding-top: 120px;
+      padding-bottom: 115px;
+    }
   }
   &__overlay {
     display: flex;
@@ -25,10 +37,25 @@
     font-size: 40px;
     font-weight: 400;
     line-height: 1.4;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+    @media (max-width: 479px) {
+      font-size: 34px;
+    }
   }
   &__btn-group {
     display: flex;
     margin-top: 50px;
+    @media (max-width: 949px) {
+      flex-direction: column;
+      margin-top: 100px;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   &__btn-content {
@@ -54,13 +81,29 @@
     right: 0;
     width: 303px;
     height: 592px;
+    @media (max-width: 1102px) {
+      width: 260px;
+    }
+    @media (max-width: 949px) {
+      width: 240px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &__boss-img {
     position: absolute;
     bottom: 0%;
     right: 8%;
-    width: 303px;
-    height: 592px;
+    object-fit: contain;
+    object-position: left;
+    @media (max-width: 1102px) {
+      right: 4%;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+
   }
   &__btn {
     display: flex;
@@ -69,8 +112,20 @@
     background-color: #fff;
     cursor: pointer;
     transition: 0.3s;
+    @media (max-width: 767px) {
+      margin: 20px 0;
+    }
+    @media (max-width: 479px) {
+      margin: 20px 20px;
+    }
     &:first-child {
       margin-right: 32px;
+      @media (max-width: 949px) {
+        margin-bottom: 20px;
+      }
+      @media (max-width: 767px) {
+        margin: 0;
+      }
     }
     &:hover {
       color: #ffffff;
@@ -86,5 +141,8 @@
         transition: 0.3s;
       }
     }
+  }
+  &__icon {
+    flex-shrink: 0;
   }
 }

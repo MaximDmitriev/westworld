@@ -38,10 +38,9 @@
     }
   }
   &__item-slide {
-    flex-shrink: 0;
-    // max-width: 245px;
-    max-height: 163px;
-  }
+    width: 245px;
+    height: 163px;
+   }
   &__item-content {
     height: 100%;
     padding: 0 24px;
@@ -104,4 +103,15 @@
     letter-spacing: 1.2px;
     color: $txt-color;
   }
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 2px solid red;
+}
+.swiper-pagination-bullet-active {
+  background-color: red;
+
 }

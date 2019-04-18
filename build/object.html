@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="initial-scale=1.0, width=1920">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <meta name="HandheldFriendly" content="True">
         <title>West World</title>
         <meta name="description" content="Page description" lang="ru">
@@ -21,7 +21,7 @@
     <body>
         <header class="header section">
             <div class="header__wrap wrap"><img class="header__logo" src="img/logo.png" alt="logo">
-                <div class="header__contacts"> <a class="header__contacts__contacts-phone" href="tel:89993555533">8 (999) 355 55 33</a><a class="header__contacts-call" href="#">обратный звонок</a></div><button class="header__btn">Бесплатная консультация</button>
+                <div class="header__contacts"> <a class="header__contacts-phone" href="tel:89993555533">8 (999) 355 55 33</a><a class="header__contacts-call" href="#">обратный звонок</a></div><button class="header__btn">Бесплатная консультация</button>
             </div>
         </header>
         <nav class="nav section">
@@ -114,32 +114,30 @@
                 </div>
             </div>
         </div>
-        <y class="slider section">
+        <div class="slider slider_object section">
             <div class="slider__wrap wrap">
-                <h2 class="slider__title">Наши достижения</h2>
-                <div class="swiper-container">
+                <div class="swiper-container" data-attribute="sw__big">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/slide1.jpg" alt="slide">
+                        <div class="swiper-slide slider__item slider__item_first">
                             <div class="slider__content">
-                                <div class="slider__content-title">1-Е МЕСТО В МЕРОПРИЯТИИ “ЛУЧШИЕ АГЕНСТВА 2018г”</div>
+                                <div class="slider__content-title">ФОТО И ИНФОРМАЦИЯ О ОБЪЕКТЕ</div>
+                            </div><img class="slider__img" src="img/room-slide1.png" alt="slide">
+                        </div>
+                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/room-slide2.png" alt="slide">
+                            <div class="slider__content">
+                                <div class="slider__content-title">ЗАГОЛОВОК</div>
                                 <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
                             </div>
                         </div>
-                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
+                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/room-slide2.png" alt="slide">
                             <div class="slider__content">
-                                <div class="slider__content-title">СЕРТИФИКАТ</div>
+                                <div class="slider__content-title">ЗАГОЛОВОК</div>
                                 <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
                             </div>
                         </div>
-                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
+                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/room-slide2.png" alt="slide">
                             <div class="slider__content">
-                                <div class="slider__content-title">СЕРТИФИКАТ</div>
-                                <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
-                            <div class="slider__content">
-                                <div class="slider__content-title">СЕРТИФИКАТ</div>
+                                <div class="slider__content-title">ЗАГОЛОВОК</div>
                                 <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
                             </div>
                         </div>
@@ -149,7 +147,7 @@
                     <div class="slider__srollbar-item"></div>
                 </div>
             </div>
-        </y>
+        </div>
         <div class="form-object section">
             <div class="form-object__overlay">
                 <div class="form-object__wrap wrap">
@@ -176,7 +174,18 @@
             <div class="alike__wrap wrap">
                 <h2 class="alike__title">Похожие объекты</h2>
                 <div class="alike__list">
-                    <div class="alike__item"><img class="alike__item-slide" src="img/object_slide1.jpg" alt="slide">
+                    <div class="alike__item">
+                        <div class="alike__item-slide">
+                            <div class="swiper-container" data-attribute="sw__small">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide3.jpg" alt="slide"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                         <div class="alike__item-content">
                             <div class="alike__item-header">
                                 <div class="alike__item-name">пентхаус в центре</div>
@@ -205,7 +214,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="alike__item"><img class="alike__item-slide" src="img/object_slide2.jpg" alt="slide">
+                    <div class="alike__item">
+                        <div class="alike__item-slide">
+                            <div class="swiper-container" data-attribute="sw__small">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/object_slide3.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                         <div class="alike__item-content">
                             <div class="alike__item-header">
                                 <div class="alike__item-name">пентхаус в центре</div>
@@ -234,7 +254,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="alike__item"><img class="alike__item-slide" src="img/object_slide3.jpg" alt="slide">
+                    <div class="alike__item">
+                        <div class="alike__item-slide">
+                            <div class="swiper-container" data-attribute="sw__small">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide3.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                         <div class="alike__item-content">
                             <div class="alike__item-header">
                                 <div class="alike__item-name">пентхаус в центре</div>

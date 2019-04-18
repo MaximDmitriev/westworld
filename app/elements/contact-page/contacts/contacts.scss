@@ -5,30 +5,23 @@
     padding-left: calc((100vw - 1100px) / 2);
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 1102px) {
+      padding-left: calc((100vw - 950px) / 2);
+    }
   }
   &__content {
-    // display: flex;
-    // flex-direction: column;
     padding-top: 96px;
     padding-left: 40px;
+    padding-right: 8px;
+    // min-height: 400px;
+    @media (max-width: 1102px) {
+      padding-top: 30px;
+      padding-left: 10px;
+      padding-right: 5px;
+      // min-height: 420px;
+    }
   }
-  // &__content-title {
-  //   font-family: "DINPro";
-  //   font-size: 24px;
-  //   font-weight: 500;
-  //   letter-spacing: 1.2px;
-  //   line-height: 24px;
-  //   color: $txt-color;
-  //   text-transform: uppercase;
-  // }
-  // &__content-address {
-  //   font-weight: 300;
-  //   line-height: 24px;
-  //   padding: 17px 0;
-  //   color: $secondaryText-color;
-  // }
   &__content-string {
-    // display: block;
     font-weight: 300;
     line-height: 24px;
     padding: 10px 0;
@@ -37,6 +30,7 @@
   }
   &__content-link {
     display: block;
+    color: $secondaryText-color;
   }
   &__content-subtitle {
     font-family: "DINPro";
@@ -46,29 +40,17 @@
     color: $txt-color;
     text-transform: uppercase;
   }
-  // &__content-schedule {
-  //   font-weight: 300;
-  //   line-height: 24px;
-  //   color: $secondaryText-color;
-  //   padding: 17px 0;
-  // }
-  // &__content-phone {
-  //   display: block;
-  //   font-weight: 300;
-  //   line-height: 24px;
-  //   color: $secondaryText-color;
-  // }
-  // &__content-email {
-  //   display: block;
-  //   font-weight: 300;
-  //   line-height: 24px;
-  //   color: $secondaryText-color;
-  //   padding-bottom: 17px;
-  // }
   &__content-social-block {
     display: flex;
     padding-top: 17px;
     align-items: center;
+  }
+  &__map {
+    min-height: 550px;
+    @media (max-width: 1102px) {
+      flex-grow: 0;
+      min-height: 463px;
+    }
   }
 
 }

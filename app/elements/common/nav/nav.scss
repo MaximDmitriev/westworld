@@ -33,5 +33,11 @@
     cursor: pointer;
     padding-top: 9px;
     padding-bottom: 7px;
+    @media (max-width: 1102px) {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 949px) {
+    display: none;
   }
 }

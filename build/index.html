@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="initial-scale=1.0, width=1920">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <meta name="HandheldFriendly" content="True">
         <title>West World</title>
         <meta name="description" content="Page description" lang="ru">
@@ -21,7 +21,7 @@
     <body>
         <header class="header section">
             <div class="header__wrap wrap"><img class="header__logo" src="img/logo.png" alt="logo">
-                <div class="header__contacts"> <a class="header__contacts__contacts-phone" href="tel:89993555533">8 (999) 355 55 33</a><a class="header__contacts-call" href="#">обратный звонок</a></div><button class="header__btn">Бесплатная консультация</button>
+                <div class="header__contacts"> <a class="header__contacts-phone" href="tel:89993555533">8 (999) 355 55 33</a><a class="header__contacts-call" href="#">обратный звонок</a></div><button class="header__btn">Бесплатная консультация</button>
             </div>
         </header>
         <nav class="nav section">
@@ -164,110 +164,120 @@
             <div class="cadaster__wrap wrap">
                 <h2 class="cadaster__title">Кадастровые услуги</h2>
                 <div class="cadaster__container">
-                    <div class="cadaster__card">
-                        <div class="cadaster__card-view cadaster__card-view_plan">
-                            <div class="cadaster__card-overlay">
-                                <h3 class="cadaster__card-title">Межевой план</h3>
+                    <div class="swiper-container" data-slider="cadastr">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cadaster__card">
+                                    <div class="cadaster__card-view cadaster__card-view_plan">
+                                        <div class="cadaster__card-overlay">
+                                            <h3 class="cadaster__card-title">Межевой план</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cadaster__list">
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Постановка на кадастровый учет</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Уточнение границ</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Объеденение и разделение участков</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Перераспределение/устранение кадастровой ошибки</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Внесение сведений в ЕГРН</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Изменение вида разрешённого использования земли</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cadaster__list">
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Постановка на кадастровый учет</p>
+                            <div class="swiper-slide">
+                                <div class="cadaster__card">
+                                    <div class="cadaster__card-view cadaster__card-view_tech">
+                                        <div class="cadaster__card-overlay">
+                                            <h3 class="cadaster__card-title">Технический план</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cadaster__list">
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Постановка на кадастровый учет</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Для ввода объекта в эксплуатацию</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Для договора аренды</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">На квартиру ( в т.ч. для перепланировки)</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">На объект незавершенного строительства</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Подготовка акта сноса</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Уточнение границ</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Объеденение и разделение участков</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Перераспределение/устранение кадастровой ошибки</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Внесение сведений в ЕГРН</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Изменение вида разрешённого использования земли</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cadaster__card">
-                        <div class="cadaster__card-view cadaster__card-view_tech">
-                            <div class="cadaster__card-overlay">
-                                <h3 class="cadaster__card-title">Технический план</h3>
-                            </div>
-                        </div>
-                        <div class="cadaster__list">
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Постановка на кадастровый учет</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Для ввода объекта в эксплуатацию</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Для договора аренды</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">На квартиру ( в т.ч. для перепланировки)</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">На объект незавершенного строительства</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Подготовка акта сноса</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cadaster__card">
-                        <div class="cadaster__card-view cadaster__card-view_rights">
-                            <div class="cadaster__card-overlay">
-                                <h3 class="cadaster__card-title">Регистрация прав</h3>
-                            </div>
-                        </div>
-                        <div class="cadaster__list">
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Регистрация права собственности</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Внесение изменений</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Исправление технической ошибки</p>
-                            </div>
-                            <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                    <use xlink:href="img/elements.svg#checked"></use>
-                                </svg>
-                                <p class="cadaster__list-item-txt">Прекращение права собсвтенности</p>
+                            <div class="swiper-slide">
+                                <div class="cadaster__card">
+                                    <div class="cadaster__card-view cadaster__card-view_rights">
+                                        <div class="cadaster__card-overlay">
+                                            <h3 class="cadaster__card-title">Регистрация прав</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cadaster__list">
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Регистрация права собственности</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Внесение изменений</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Исправление технической ошибки</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Прекращение права собсвтенности</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -283,144 +293,168 @@
         <div class="offers section">
             <h2 class="offers__title">Пакеты услуг</h2>
             <div class="offers__wrap wrap">
-                <div class="offers__card">
-                    <div class="offers__card-view offers__card-view_econom"></div>
-                    <h3 class="offers__card-title">Пакет “ЭКОНОМ”</h3>
-                    <div class="cadaster__list">
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Предварительное исследование стоимости объекта</p>
+                <div class="swiper-container" data-slider="offers">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="offers__card-wrapper">
+                                <div class="offers__card">
+                                    <div class="offers__card-view offers__card-view_econom"></div>
+                                    <h3 class="offers__card-title">Пакет “ЭКОНОМ”</h3>
+                                    <div class="cadaster__list">
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Предварительное исследование стоимости объекта</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Встреча с агентом на объекте</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Анализ ситуации и документов</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Выработка стратегии</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Профессиональная фотосъемка объекта</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Разработка маркетингового плана</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Отчёт о размещении рекламы</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Сопровождение сделки на всех этапах</p>
+                                        </div>
+                                    </div><button class="offers__card-btn">Заказать</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Встреча с агентом на объекте</p>
+                        <div class="swiper-slide">
+                            <div class="offers__card-wrapper">
+                                <div class="offers__card">
+                                    <div class="offers__card-view offers__card-view_comfort"></div>
+                                    <h3 class="offers__card-title">Пакет “КОМФОРТ”</h3>
+                                    <h4 class="offers__card-info">все услуги пакета “ЭКОНОМ”</h4><svg class="icon-plus offers__card-icon">
+                                        <use xlink:href="img/elements.svg#plus"></use>
+                                    </svg>
+                                    <div class="cadaster__list">
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Профессиональные переговоры и взаимодействие с покупателем</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Маркетинговое исследование рынка</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Регулярный отчёт о тенденциях и изменениях цен</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Сбор всех необходимых документов для сделки</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Премиум размещение рекламы обьекта</p>
+                                        </div>
+                                    </div><button class="offers__card-btn">Заказать</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Анализ ситуации и документов</p>
+                        <div class="swiper-slide">
+                            <div class="offers__card-wrapper">
+                                <div class="offers__card">
+                                    <div class="offers__card-view offers__card-view_premium"></div>
+                                    <h3 class="offers__card-title">Пакет “ПРЕМИУМ”</h3>
+                                    <h4 class="offers__card-info">Все услуги пакетов “ЭКОНОМ” и “КОМФОРТ” </h4><svg class="icon-plus offers__card-icon">
+                                        <use xlink:href="img/elements.svg#plus"></use>
+                                    </svg>
+                                    <div class="cadaster__list">
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Мониторинг конкурирующих объектов, регулярный отчёт</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Клининговые услуги</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Размещение 3д-тура по объекту</p>
+                                        </div>
+                                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
+                                                <use xlink:href="img/elements.svg#checked"></use>
+                                            </svg>
+                                            <p class="cadaster__list-item-txt">Топ размещение рекламы объекта</p>
+                                        </div>
+                                    </div><button class="offers__card-btn">Заказать</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Выработка стратегии</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Профессиональная фотосъемка объекта</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Разработка маркетингового плана</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Отчёт о размещении рекламы</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Сопровождение сделки на всех этапах</p>
-                        </div>
-                    </div><button class="offers__card-btn">Заказать</button>
-                </div>
-                <div class="offers__card">
-                    <div class="offers__card-view offers__card-view_comfort"></div>
-                    <h3 class="offers__card-title">Пакет “КОМФОРТ”</h3>
-                    <h4 class="offers__card-info">все услуги пакета “ЭКОНОМ”</h4><svg class="icon-plus offers__card-icon">
-                        <use xlink:href="img/elements.svg#plus"></use>
-                    </svg>
-                    <div class="cadaster__list">
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Профессиональные переговоры и взаимодействие с покупателем</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Маркетинговое исследование рынка</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Регулярный отчёт о тенденциях и изменениях цен</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Сбор всех необходимых документов для сделки</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Премиум размещение рекламы обьекта</p>
-                        </div>
-                    </div><button class="offers__card-btn">Заказать</button>
-                </div>
-                <div class="offers__card">
-                    <div class="offers__card-view offers__card-view_premium"></div>
-                    <h3 class="offers__card-title">Пакет “ПРЕМИУМ”</h3>
-                    <h4 class="offers__card-info">Все услуги пакетов “ЭКОНОМ” и “КОМФОРТ” </h4><svg class="icon-plus offers__card-icon">
-                        <use xlink:href="img/elements.svg#plus"></use>
-                    </svg>
-                    <div class="cadaster__list">
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Мониторинг конкурирующих объектов, регулярный отчёт</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Клининговые услуги</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Размещение 3д-тура по объекту</p>
-                        </div>
-                        <div class="cadaster__list-item"><svg class="icon-checked cadaster__list-item-icon">
-                                <use xlink:href="img/elements.svg#checked"></use>
-                            </svg>
-                            <p class="cadaster__list-item-txt">Топ размещение рекламы объекта</p>
-                        </div>
-                    </div><button class="offers__card-btn">Заказать</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <y class="slider section">
+        <div class="slider section">
             <div class="slider__wrap wrap">
                 <h2 class="slider__title">Наши достижения</h2>
-                <div class="swiper-container">
+                <div class="swiper-container" data-attribute="sw__big">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/slide1.jpg" alt="slide">
-                            <div class="slider__content">
-                                <div class="slider__content-title">1-Е МЕСТО В МЕРОПРИЯТИИ “ЛУЧШИЕ АГЕНСТВА 2018г”</div>
-                                <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                        <div class="swiper-slide">
+                            <div class="slider__item"><img class="slider__img" src="img/slide1.jpg" alt="slide">
+                                <div class="slider__content">
+                                    <div class="slider__content-title">1-Е МЕСТО В МЕРОПРИЯТИИ “ЛУЧШИЕ АГЕНСТВА 2018г”</div>
+                                    <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
-                            <div class="slider__content">
-                                <div class="slider__content-title">СЕРТИФИКАТ</div>
-                                <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                        <div class="swiper-slide">
+                            <div class="slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
+                                <div class="slider__content">
+                                    <div class="slider__content-title">СЕРТИФИКАТ</div>
+                                    <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
-                            <div class="slider__content">
-                                <div class="slider__content-title">СЕРТИФИКАТ</div>
-                                <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                        <div class="swiper-slide">
+                            <div class="slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
+                                <div class="slider__content">
+                                    <div class="slider__content-title">СЕРТИФИКАТ</div>
+                                    <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
-                            <div class="slider__content">
-                                <div class="slider__content-title">СЕРТИФИКАТ</div>
-                                <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                        <div class="swiper-slide">
+                            <div class="slider__item"><img class="slider__img" src="img/slide2.jpg" alt="slide">
+                                <div class="slider__content">
+                                    <div class="slider__content-title">СЕРТИФИКАТ</div>
+                                    <div class="slider__content-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -429,7 +463,7 @@
                     <div class="slider__srollbar-item"></div>
                 </div>
             </div>
-        </y>
+        </div>
         <div class="feedback section">
             <h2 class="feedback__title">Отзывы</h2>
             <div class="feedback__wrap wrap">

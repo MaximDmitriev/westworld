@@ -18,6 +18,9 @@
     font-weight: 700;
     letter-spacing: 1.6px;
     color: $secondaryText-color;
+    &:hover {
+      text-decoration: none;
+    }
     &_active {
       background-color: $btn-color;
       color: #fff;

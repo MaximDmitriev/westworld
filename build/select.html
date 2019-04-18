@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="initial-scale=1.0, width=1920">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width">
         <meta name="HandheldFriendly" content="True">
         <title>West World</title>
         <meta name="description" content="Page description" lang="ru">
@@ -21,7 +21,7 @@
     <body>
         <header class="header section">
             <div class="header__wrap wrap"><img class="header__logo" src="img/logo.png" alt="logo">
-                <div class="header__contacts"> <a class="header__contacts__contacts-phone" href="tel:89993555533">8 (999) 355 55 33</a><a class="header__contacts-call" href="#">обратный звонок</a></div><button class="header__btn">Бесплатная консультация</button>
+                <div class="header__contacts"> <a class="header__contacts-phone" href="tel:89993555533">8 (999) 355 55 33</a><a class="header__contacts-call" href="#">обратный звонок</a></div><button class="header__btn">Бесплатная консультация</button>
             </div>
         </header>
         <nav class="nav section">
@@ -46,25 +46,23 @@
                 <div class="filter__primary">
                     <div class="filter__primary-header">Основные вопросы</div>
                     <div class="filter__primary-input-group">
-                        <div class="filter__primary-btn">Москва <svg class="icon-arrow_down ">
-                                <use xlink:href="img/elements.svg#arrow_down"></use>
+                        <div class="filter__primary-btn">Москва <svg class="icon-down-chevron filter__select-icon">
+                                <use xlink:href="img/elements.svg#down-chevron"></use>
                             </svg></div>
-                        <div class="filter__primary-btn filter__primary-btn_disabled">Тип недвижимости<svg class="icon-arrow_down ">
-                                <use xlink:href="img/elements.svg#arrow_down"></use>
+                        <div class="filter__primary-btn filter__primary-btn_disabled">Тип недвижимости<svg class="icon-down-chevron filter__select-icon">
+                                <use xlink:href="img/elements.svg#down-chevron"></use>
                             </svg></div><input class="filter__primary-input-item" type="text" placeholder="Введите название ЖК, района, метро, шоссе">
                     </div>
                 </div>
                 <div class="filter__secondary">
-                    <div class="filter__secondary-header">Дополнительные вопросы<svg class="icon-arrow_down ">
-                            <use xlink:href="img/elements.svg#arrow_down"></use>
+                    <div class="filter__secondary-header">Дополнительные вопросы<svg class="icon-down-chevron filter__select-icon">
+                            <use xlink:href="img/elements.svg#down-chevron"></use>
                         </svg></div>
                     <div class="filter__secondary-input-group">
                         <div class="filter__secondary-rooms-group">
-                            <div class="filter__secondary-rooms-item">Кол-во комнат</div>
-                            <div class="filter__secondary-rooms-item">1</div>
-                            <div class="filter__secondary-rooms-item">2</div>
-                            <div class="filter__secondary-rooms-item">3</div>
-                            <div class="filter__secondary-rooms-item">4+</div>
+                            <div class="filter__secondary-rooms-item">Кол-во комнат</div><label for="room-one"><input class="filter__secondary-checkbox-input" type="checkbox" id="room-one">
+                                <div class="filter__secondary-rooms-item">1</div>
+                            </label>
                         </div>
                         <div class="filter__secondary-price-group"><input class="filter__secondary-price-item" type="text" placeholder="Цена от"><input class="filter__secondary-price-item" type="text" placeholder="Цена до"></div>
                         <div class="filter__secondary-area-group"><input class="filter__secondary-area-item" type="text" placeholder="Площадь от (м²)"><input class="filter__secondary-area-item" type="text" placeholder="до (м²)"></div>
@@ -115,10 +113,21 @@
                 </div>
             </div>
         </div>
-        <div class="alike alike_select section">
+        <div class="alike alike_select section" id="list">
             <div class="alike__wrap wrap">
                 <div class="alike__list">
-                    <div class="alike__item"><img class="alike__item-slide" src="img/object_slide1.jpg" alt="slide">
+                    <div class="alike__item">
+                        <div class="alike__item-slide">
+                            <div class="swiper-container" data-attribute="sw__small">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide3.jpg" alt="slide"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                         <div class="alike__item-content">
                             <div class="alike__item-header">
                                 <div class="alike__item-name">пентхаус в центре</div>
@@ -147,36 +156,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="alike__item"><img class="alike__item-slide" src="img/object_slide3.jpg" alt="slide">
-                        <div class="alike__item-content">
-                            <div class="alike__item-header">
-                                <div class="alike__item-name">пентхаус в центре</div>
-                                <div class="alike__item-like">В избранное </div><svg class="icon-star_empty ">
-                                    <use xlink:href="img/elements.svg#star_empty"></use>
-                                </svg>
-                            </div>
-                            <div class="alike__item-address">г. Москва, ул. Пушкина 39а </div>
-                            <div class="alike__item-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
-                            <div class="alike__item-footer">
-                                <div class="alike__item-params">
-                                    <div class="alike__item-params-item">
-                                        <div class="alike__item-params-key">Площадь:</div>
-                                        <div class="alike__item-params-value">152м<sup>2</sup></div>
-                                    </div>
-                                    <div class="alike__item-params-item">
-                                        <div class="alike__item-params-key">Кол-во комнат:</div>
-                                        <div class="alike__item-params-value">4</div>
-                                    </div>
-                                    <div class="alike__item-params-item">
-                                        <div class="alike__item-params-key">Этаж:</div>
-                                        <div class="alike__item-params-value">24</div>
-                                    </div>
+                    <div class="alike__item">
+                        <div class="alike__item-slide">
+                            <div class="swiper-container" data-attribute="sw__small">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide3.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide3.jpg" alt="slide"></div>
                                 </div>
-                                <div class="alike__item-price">10 500 000 руб. </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="alike__item"><img class="alike__item-slide" src="img/object_slide2.jpg" alt="slide">
                         <div class="alike__item-content">
                             <div class="alike__item-header">
                                 <div class="alike__item-name">пентхаус в центре</div>
@@ -205,7 +196,58 @@
                             </div>
                         </div>
                     </div>
-                    <div class="alike__item"><img class="alike__item-slide" src="img/object_slide3.jpg" alt="slide">
+                    <div class="alike__item">
+                        <div class="alike__item-slide">
+                            <div class="swiper-container" data-attribute="sw__small">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide3.jpg" alt="slide"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="alike__item-content">
+                            <div class="alike__item-header">
+                                <div class="alike__item-name">пентхаус в центре</div>
+                                <div class="alike__item-like">В избранное </div><svg class="icon-star_empty ">
+                                    <use xlink:href="img/elements.svg#star_empty"></use>
+                                </svg>
+                            </div>
+                            <div class="alike__item-address">г. Москва, ул. Пушкина 39а </div>
+                            <div class="alike__item-txt">Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности.</div>
+                            <div class="alike__item-footer">
+                                <div class="alike__item-params">
+                                    <div class="alike__item-params-item">
+                                        <div class="alike__item-params-key">Площадь:</div>
+                                        <div class="alike__item-params-value">152м<sup>2</sup></div>
+                                    </div>
+                                    <div class="alike__item-params-item">
+                                        <div class="alike__item-params-key">Кол-во комнат:</div>
+                                        <div class="alike__item-params-value">4</div>
+                                    </div>
+                                    <div class="alike__item-params-item">
+                                        <div class="alike__item-params-key">Этаж:</div>
+                                        <div class="alike__item-params-value">24</div>
+                                    </div>
+                                </div>
+                                <div class="alike__item-price">10 500 000 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alike__item">
+                        <div class="alike__item-slide">
+                            <div class="swiper-container" data-attribute="sw__small">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/object_slide3.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide1.jpg" alt="slide"></div>
+                                    <div class="swiper-slide"><img src="img/object_slide2.jpg" alt="slide"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                         <div class="alike__item-content">
                             <div class="alike__item-header">
                                 <div class="alike__item-name">пентхаус в центре</div>
@@ -238,13 +280,8 @@
             </div>
         </div>
         <div class="select-pagination section">
-            <div class="select-pagination__wrap wrap">
-                <div class="select-pagination__number select-pagination__number_active">1</div>
-                <div class="select-pagination__number">2</div>
-                <div class="select-pagination__number">3</div>
-                <div class="select-pagination__dots">...</div>
-                <div class="select-pagination__number">12</div>
-            </div>
+            <div class="select-pagination__wrap wrap"><a class="select-pagination__number select-pagination__number_active" href="#">1</a><a class="select-pagination__number" href="#">2</a><a class="select-pagination__number" href="#">3</a>
+                <div class="select-pagination__dots">...</div><a class="select-pagination__number" href="#">12</a></div>
         </div>
         <footer class="footer section">
             <div class="footer__wrap wrap">

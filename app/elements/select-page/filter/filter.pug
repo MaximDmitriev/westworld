@@ -4,20 +4,22 @@
       ._primary-header Основные вопросы
       ._primary-input-group
         ._primary-btn Москва 
-          +svg('arrow_down')
+          +svg('down-chevron', 'filter__select-icon')
         ._primary-btn.-disabled Тип недвижимости
-          +svg('arrow_down')
+          +svg('down-chevron', 'filter__select-icon')
         input(type="text" placeholder="Введите название ЖК, района, метро, шоссе")._primary-input-item
     ._secondary
       ._secondary-header Дополнительные вопросы
-        +svg('arrow_down')
+        +svg('down-chevron', 'filter__select-icon')
       ._secondary-input-group
         ._secondary-rooms-group
           ._secondary-rooms-item Кол-во комнат
-          ._secondary-rooms-item 1
-          ._secondary-rooms-item 2
-          ._secondary-rooms-item 3
-          ._secondary-rooms-item 4+
+          label(for="room-one")
+            input(type="checkbox")#room-one.filter__secondary-checkbox-input
+            ._secondary-rooms-item 1
+          //- ._secondary-rooms-item 2
+          //- ._secondary-rooms-item 3
+          //- ._secondary-rooms-item 4+
         ._secondary-price-group
           input(type="text" placeholder="Цена от")._secondary-price-item 
           input(type="text" placeholder="Цена до")._secondary-price-item 

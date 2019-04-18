@@ -7,6 +7,9 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 0;
+    @media (max-width: 1102px) {
+        justify-content: center;
+    }
   }
   &__title {
     width: 100%;
@@ -18,6 +21,14 @@
     color: $txt-color;
     text-transform: uppercase;
     text-align: center;
+    @media (max-width: 767px) {
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 479px) {
+      text-align: center;
+      font-size: 32px;
+    }
   }
   &__card {
     position: relative;
@@ -45,7 +56,6 @@
   }
   &__card-info {
     max-width: 260px;
-    // margin-bottom: 15px;
     font-family: "DINPro";
     color: $btn-color;
     font-weight: 500;
@@ -57,7 +67,6 @@
     margin: 15px 0;
   }
   &__card-btn {
-    // justify-self: end;
     margin-top: auto;
     width: 288px;
     height: 45px;
@@ -85,5 +94,10 @@
     &_premium {
       background-image: url('img/premium.png');
     }
+  }
+  &__card-wrapper {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
   }
 }

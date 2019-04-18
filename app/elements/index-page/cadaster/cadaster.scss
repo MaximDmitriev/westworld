@@ -2,10 +2,14 @@
   // margin-top: 94px;
   padding-top: 48px;
   padding-bottom: 96px;
+  @media (max-width: 767px) {
+    padding-top: 34px;
+    padding-bottom: 68px;
+  }
   &__wrap {
     // justify-content: center;
     align-items: center;
-    width: 1156px;
+    // width: 1156px;
     padding: 0;
   }
   &__title {
@@ -17,23 +21,34 @@
     color: $txt-color;
     text-transform: uppercase;
     text-align: center;
+    @media (max-width: 767px) {
+      font-size: 34px;
+    }
+    @media (max-width: 479px) {
+      text-align: center;
+      font-size: 32px;
+    }
   }
   &__container {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @media (max-width: 1102px) {
+      justify-content: center;
+    }
   }
   &__card {
     display: flex;
     flex-direction: column;
-    width: 374px;
+    width: 356px;
     border: 1px solid #d3d3d3;
+    min-height: 543px;
   }
   &__card-view {
-    width: 372px;
+    width: 100%;
     height: 220px;
     margin-bottom: 27px;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     &_plan {
@@ -47,8 +62,8 @@
     }
   }
   &__card-overlay {
-    width: 372px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     padding-top: 176px;
     padding-left: 54px;
     background-image: linear-gradient(180deg, rgba(145, 145, 145, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
